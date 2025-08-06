@@ -1,0 +1,21 @@
+/** COLORS **/
+
+:root {
+    /** CORE COLORS **/
+    --color-text: #3a3a3a;
+    --color-text-lighter: #8a8a8a;
+
+    --color-background: #e7dfd5;
+    --color-background-lighter: #e9ebd9;
+
+    /** ACCENTS **/
+    --color-text-green-accent: #45663e;
+    --color-background-green-accent: #adcea4;
+}
+
+/** APPLY COLORS **/
+
+:root {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}

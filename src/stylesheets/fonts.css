@@ -1,0 +1,54 @@
+/** FONTS **/
+
+@font-face {
+    font-family: NotoSans;
+    src: url('/fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf');
+}
+
+@font-face {
+    font-family: GoogleSansCode;
+    src: url('/fonts/Google_Sans_Code/GoogleSansCode-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: EduNSWACTCursive;
+    src: url('/fonts/Edu_NSW_ACT_Cursive/EduNSWACTCursive-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: ArchivoBlack;
+    src: url('/fonts/Archivo_Black/ArchivoBlack-Regular.ttf');
+}
+
+/** APPLY FONTS **/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: ArchivoBlack;
+}
+
+p,
+span,
+div,
+a,
+li,
+ul,
+ol,
+button,
+input,
+textarea,
+select {
+    font-family: NotoSans;
+}
+
+.cursive {
+    font-family: EduNSWACTCursive;
+}
+
+.code {
+    font-family: GoogleSansCode;
+}
