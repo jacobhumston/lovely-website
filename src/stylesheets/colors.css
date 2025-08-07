@@ -7,10 +7,13 @@
 
     --color-background: #e7dfd5;
     --color-background-lighter: #e9ebd9;
+    --color-background-darker: #e0d7cb;
 
     /** ACCENTS **/
     --color-text-green-accent: #45663e;
     --color-background-green-accent: #adcea4;
+    --color-text-red-accent: #6e2b2b;
+    --color-background-red-accent: #d8b2b2;
 }
 
 /** APPLY COLORS **/

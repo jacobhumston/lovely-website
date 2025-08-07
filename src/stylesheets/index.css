@@ -1,12 +1,15 @@
+@import './fonts.css';
+@import './colors.css';
+@import './all.css';
+
 /** IDENTITY ITEMS **/
 
 #identifyFlex {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    padding-bottom: 50px;
-    gap: 25px;
+    padding: 30px;
+    gap: 40px;
     background-color: var(--color-background-lighter);
 }
 
@@ -47,11 +50,15 @@
     width: 35px;
     height: 35px;
     color: var(--color-background-green-accent);
-    transition: color 500ms;
+    transition: all 500ms;
 }
 
 #identifyFlex div[data-part='name'] div[data-part='socials'] a:hover {
     color: var(--color-text-green-accent);
+    /*
+    color: #ffffff;
+    filter: drop-shadow(0px 0px 5px attr(data-color type(<color>), black));
+    */
 }
 
 #identifyFlex div[data-part='name'] p[data-part='pictureNote'] {
@@ -68,7 +75,7 @@
     max-height: 500px;
     width: auto;
     border-radius: 25px;
-    box-shadow: 15px 15px 20px var(--color-background-green-accent);
+    filter: drop-shadow(0px 0px 15px var(--color-text-green-accent));
 }
 
 @media screen and (max-width: 530px) {
@@ -76,4 +83,59 @@
     #identifyFlex div[data-part='name'] p[data-part='pictureNote'] {
         display: none;
     }
+}
+
+/** PAGE SELECTOR **/
+
+#pageSelector {
+    padding: 10px;
+    background-color: var(--color-background-darker);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#pageSelector button {
+    background-color: var(--color-background-red-accent);
+    color: var(--color-text-red-accent);
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 15px;
+    border: none;
+    font-size: medium;
+    border-radius: 10px;
+    transition: all 500ms;
+    font-family: ArchivoBlack;
+}
+
+#pageSelector button:hover {
+    cursor: pointer;
+    background-color: var(--color-text-red-accent);
+    color: var(--color-background-red-accent);
+}
+
+#pageSelector button[data-selected='true'] {
+    background-color: var(--color-background-green-accent);
+    color: var(--color-text-green-accent);
+    cursor: default;
+}
+
+/** PAGES **/
+
+.page {
+    padding: 25px;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+}
+
+.pageActive {
+    display: block;
+}
+
+.page h1 {
+    margin: 0px;
 }
